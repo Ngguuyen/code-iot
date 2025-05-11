@@ -1,6 +1,4 @@
-// -----------------------
 // CẤU HÌNH CHO BLYNK IOT
-// -----------------------
 #define BLYNK_TEMPLATE_ID "TMPL6NukCryOl"
 #define BLYNK_TEMPLATE_NAME "IoT"
 #define BLYNK_AUTH_TOKEN "O0dvP_Ys58x4oIkNwysD788xo-w8Crgx" 
@@ -13,9 +11,7 @@
 char ssid[] = "Zz";       
 char pass[] = "TTT667788";  
 
-// -----------------------
 // THƯ VIỆN VÀ CẤU HÌNH CHO HỆ THỐNG
-// -----------------------
 #include <ESP32Servo.h>
 #include <SPI.h>
 #include <MFRC522.h>
@@ -378,9 +374,7 @@ void setup() {
   pinMode(BTN_DOWN_PIN, INPUT_PULLUP);
   pinMode(BTN_MENU_PIN, INPUT_PULLUP);
   
-  // -----------------------
   // KHỞI TẠO KẾT NỐI BLYNK
-  // -----------------------
   Blynk.begin(BLYNK_AUTH_TOKEN, ssid, pass);
 }
 
